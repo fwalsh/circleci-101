@@ -5,10 +5,10 @@ jobs:
     docker:
       - image: "debian:jessie"
     steps:
-      - run: A first hello 
+      - run: echo "A first hello" 
   build-more-things:
     working_directory: "~"
     docker:
       - image: "debian:jessie"
     steps:
-      - run: And a more familiar hi
+      - run: echo "And a more familiar hi"
