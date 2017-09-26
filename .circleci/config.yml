@@ -13,7 +13,7 @@ jobs:
       - image: "debian:jessie"
     steps:
       - run: echo "And a more familiar hi"
-      - run: sleep 7
+      - run: sleep 10
 workflows:
   version: 2
   one_and_two:
