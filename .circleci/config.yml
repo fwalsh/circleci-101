@@ -1,8 +1,14 @@
 version: 2
 jobs:
-  build:
+  one:
+    working_directory: "~"
     docker:
-      - image: circleci/ruby:2.3-node-browsers
+      - image: "debian:jessie"
     steps:
-      - checkout
-      - run: echo "hello world"
+      - run: A first hello 
+  two:
+    working_directory: "~"
+    docker:
+      - image: "debian:jessie"
+    steps:
+      - run: And a more familiar hi
