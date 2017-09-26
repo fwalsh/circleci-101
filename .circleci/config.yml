@@ -1,12 +1,12 @@
 version: 2
 jobs:
-  one:
+  build:
     working_directory: "~"
     docker:
       - image: "debian:jessie"
     steps:
       - run: A first hello 
-  two:
+  build-more-things:
     working_directory: "~"
     docker:
       - image: "debian:jessie"
