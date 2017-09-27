@@ -1,6 +1,7 @@
 version: 2
 jobs:
   one:
+    working_directory: /tmp
     docker:
       - image: debian:jessie
     steps:
