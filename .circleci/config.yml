@@ -1,7 +1,7 @@
 version: 2
 jobs:
   one:
-    working_directory: /tmp
+    working_directory: ~/circle101
     docker:
       - image: debian:jessie
     steps:
