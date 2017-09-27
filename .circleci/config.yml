@@ -3,7 +3,7 @@ jobs:
   one:
     working_directory: ~/circle101
     docker:
-      - image: debian:jessie
+      - image: circleci/clojure:boot-2.7.1-browsers
     steps:
       - checkout
       - run: echo "A first hello"
@@ -18,7 +18,7 @@ jobs:
       - run: sleep 10      
   two:
     docker:
-      - image: debian:jessie
+      - image: circleci/clojure:boot-2.7.1-browsers
     steps:
       - checkout
       - run: echo "A more familiar hi"  
